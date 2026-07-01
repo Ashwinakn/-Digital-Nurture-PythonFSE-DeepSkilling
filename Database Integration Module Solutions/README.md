@@ -1,4 +1,4 @@
-# 🗄️ Database Integration — Digital Nurture 5.0
+# Database Integration — Digital Nurture 5.0
 
 > **Module 3 · Python Full Stack Engineering (FSE) · Deep Skilling Program**
 
@@ -6,7 +6,7 @@ This module covers end-to-end database integration skills using **MySQL**, **Mon
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 Database Integration/
@@ -22,7 +22,7 @@ Database Integration/
 
 ---
 
-## 🏫 Domain Context
+##  Domain Context
 
 All exercises revolve around a **College Management System** database (`college_db`) with the following entities:
 
@@ -36,11 +36,11 @@ All exercises revolve around a **College Management System** database (`college_
 
 ---
 
-## 📚 Hands-On Breakdown
+##  Hands-On Breakdown
 
 ---
 
-### 📂 HandsOn-1 — DDL: Schema Design & Normalization
+###  HandsOn-1 — DDL: Schema Design & Normalization
 
 **Technology:** MySQL · **Concepts:** DDL, Data Modeling, Normalization
 
@@ -58,7 +58,7 @@ All exercises revolve around a **College Management System** database (`college_
 
 ---
 
-### 📂 HandsOn-2 — DML: Data Manipulation & Basic Querying
+###  HandsOn-2 — DML: Data Manipulation & Basic Querying
 
 **Technology:** MySQL · **Concepts:** DML, Filtering, Joins, Aggregations
 
@@ -77,7 +77,7 @@ All exercises revolve around a **College Management System** database (`college_
 
 ---
 
-### 📂 HandsOn-3 — Advanced SQL: Subqueries, Views & Stored Procedures
+###  HandsOn-3 — Advanced SQL: Subqueries, Views & Stored Procedures
 
 **Technology:** MySQL · **Concepts:** Subqueries, Views, Stored Procedures, Transactions
 
@@ -95,7 +95,7 @@ All exercises revolve around a **College Management System** database (`college_
 
 ---
 
-### 📂 HandsOn-4 — Performance: Indexes & N+1 Problem
+###  HandsOn-4 — Performance: Indexes & N+1 Problem
 
 **Technology:** MySQL + Python (mysql-connector) · **Concepts:** Query Optimization, Indexing, N+1 Anti-pattern
 
@@ -112,11 +112,11 @@ All exercises revolve around a **College Management System** database (`college_
 - N+1 Query Anti-pattern — fetching related data in a loop
 - Optimization using a single `JOIN` query
 
-> ⚠️ **Note:** Replace `your_password` in `Task3_N_Plus_One.py` with your actual MySQL password before running.
+>  **Note:** Replace `your_password` in `Task3_N_Plus_One.py` with your actual MySQL password before running.
 
 ---
 
-### 📂 HandsOn-5 — NoSQL: MongoDB Collections & Aggregation
+###  HandsOn-5 — NoSQL: MongoDB Collections & Aggregation
 
 **Technology:** MongoDB (mongosh) · **Concepts:** Document Model, CRUD, Aggregation Pipeline
 
@@ -133,7 +133,7 @@ All exercises revolve around a **College Management System** database (`college_
 
 ---
 
-### 📂 HandsOn-6 — ORM: SQLAlchemy CRUD & Relationships
+### HandsOn-6 — ORM: SQLAlchemy CRUD & Relationships
 
 **Technology:** Python + SQLAlchemy · **Concepts:** ORM, Model Classes, Relationships
 
@@ -150,11 +150,11 @@ All exercises revolve around a **College Management System** database (`college_
 - `session.add()`, `session.query()`, `session.commit()`, `session.delete()`
 - `ForeignKey`, `relationship()`, `back_populates`
 
-> ⚠️ **Note:** Set your DB password in `DATABASE_URL` before running. Current placeholder: `your_password`
+> **Note:** Set your DB password in `DATABASE_URL` before running. Current placeholder: `your_password`
 
 ---
 
-### 📂 HandsOn-7 — Migrations: Alembic Schema Versioning
+###  HandsOn-7 — Migrations: Alembic Schema Versioning
 
 **Technology:** Python + Alembic + SQLAlchemy · **Concepts:** Schema Migration, Version Control for DB
 
@@ -193,7 +193,7 @@ python -m alembic downgrade base
 python -m alembic history
 ```
 
-> ⚠️ **Note:** Update `sqlalchemy.url` in `alembic.ini` with your actual DB password before running migrations.
+>  **Note:** Update `sqlalchemy.url` in `alembic.ini` with your actual DB password before running migrations.
 
 ---
 
@@ -236,7 +236,7 @@ load("HandsOn-5/Task3_Aggregation_Pipeline.js")
 
 ---
 
-## 🔐 Security Note
+## Security Note
 
 All database passwords in this repository have been replaced with `your_password` as a placeholder.  
 **Do NOT commit real credentials to version control.** Use environment variables or a `.env` file in practice.
@@ -248,10 +248,10 @@ DATABASE_URL = f"mysql+pymysql://root:{os.environ['DB_PASSWORD']}@localhost/coll
 
 ---
 
-## 👩‍💻 Author
+## Author
 
-**Ashwina Narendrakumar**  
+**Ashwina K N**  
 Digital Nurture 5.0 — Python Full Stack Engineering (FSE) Deep Skilling  
-Module 3: Database Integration
+Module: Database Integration
 
 ---
