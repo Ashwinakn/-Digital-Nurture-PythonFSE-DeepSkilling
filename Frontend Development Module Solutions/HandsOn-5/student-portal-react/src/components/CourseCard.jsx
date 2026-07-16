@@ -1,10 +1,29 @@
-function CourseCard(props) {
+function CourseCard({
+  id,
+  name,
+  code,
+  credits,
+  grade,
+  onEnroll
+}) {
   return (
-    <div>
-      <h3>{props.name}</h3>
-      <p>Code: {props.code}</p>
-      <p>Credits: {props.credits}</p>
-      <p>Grade: {props.grade}</p>
+    <div className="course-card">
+      <h3>{name}</h3>
+      <p>Code: {code}</p>
+      <p>Credits: {credits}</p>
+      <p>Grade: {grade}</p>
+
+      <button onClick={() =>
+        onEnroll({
+          id,
+          name,
+          code,
+          credits,
+          grade
+        })
+      }>
+        Enroll
+      </button>
     </div>
   );
 }

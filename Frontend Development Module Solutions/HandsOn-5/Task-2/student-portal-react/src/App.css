@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(135deg, #1a237e, #283593);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+header .enrolled-badge {
+  background: #4caf50;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.search-container {
+  margin-bottom: 1.5rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #3f51b5;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.course-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 2px solid transparent;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.course-card.enrolled {
+  border-color: #4caf50;
+  background: #f1f8f1;
+}
+
+.course-card h3 {
+  font-size: 1.1rem;
+  color: #1a237e;
+  margin-bottom: 0.5rem;
+}
+
+.course-card p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.btn-enroll, .btn-enrolled {
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-enroll {
+  background: #3f51b5;
+  color: white;
+}
+
+.btn-enroll:hover {
+  background: #303f9f;
+}
+
+.btn-enrolled {
+  background: #4caf50;
+  color: white;
+  cursor: default;
+}
+
+.no-results {
+  color: #888;
+  font-style: italic;
+  padding: 2rem;
+  text-align: center;
+}
+
+.enrolled-section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 4px solid #4caf50;
+}
+
+.enrolled-section h2 {
+  color: #1a237e;
+  margin-bottom: 1rem;
+}
+
+.enrolled-list {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.enrolled-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+.total-credits {
+  font-weight: 700;
+  color: #1a237e;
+  font-size: 1.05rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #1a237e;
+  color: rgba(255,255,255,0.7);
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}

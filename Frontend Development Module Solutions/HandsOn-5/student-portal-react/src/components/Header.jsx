@@ -1,13 +1,15 @@
-function Header(props) {
+function Header({ siteName, enrolledCount }) {
   return (
     <header>
-      <h1>{props.siteName}</h1>
+      <h1>{siteName}</h1>
 
       <nav>
         <a href="#">Home</a>
         <a href="#">Courses</a>
         <a href="#">Profile</a>
       </nav>
+
+      <p>Enrolled Courses: {enrolledCount}</p>
     </header>
   );
 }
