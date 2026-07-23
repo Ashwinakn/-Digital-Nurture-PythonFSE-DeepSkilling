@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hands-On 9 Task 3</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1>Student Portal</h1>
+</header>
+
+<main>
+<section>
+<h2>Accessible Feedback Form</h2>
+
+<form id="feedbackForm">
+
+<label for="student">Student Name</label>
+<input id="student" aria-describedby="studentHelp" required>
+<small id="studentHelp">Enter your full name.</small>
+
+<label for="feedback">Feedback</label>
+<textarea id="feedback" rows="5" required></textarea>
+
+<div aria-live="polite" id="message"></div>
+
+<button type="submit">Submit Feedback</button>
+
+</form>
+</section>
+</main>
+
+<script>
+document.getElementById("feedbackForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ document.getElementById("message").textContent="Feedback submitted successfully!";
+});
+</script>
+
+</body>
+</html>

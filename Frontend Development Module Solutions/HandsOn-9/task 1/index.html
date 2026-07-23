@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portal - Accessible</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--
+Accessibility Audit
+Initial Score: 88 (example)
+Issues Fixed:
+1. Added semantic HTML.
+2. Added alt attributes.
+3. Added labels for all form inputs.
+4. Corrected heading hierarchy.
+5. Improved colour contrast.
+-->
+
+<header>
+  <h1>Student Portal</h1>
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+<h2>Welcome to Student Portal</h2>
+<p>Manage your courses and profile.</p>
+<img src="student.jpg" alt="Student studying using a laptop">
+</section>
+
+<section>
+<h2>Search Courses</h2>
+
+<label for="search">Search Courses</label>
+<input id="search" type="text" placeholder="Search courses">
+
+<div class="course-grid">
+
+<article class="course-card">
+<h3>Python Programming</h3>
+<p>Code: CS101</p>
+<button aria-label="Enroll in Python Programming">Enroll</button>
+</article>
+
+<article class="course-card">
+<h3>Cloud Computing</h3>
+<p>Code: CS102</p>
+<button aria-label="Enroll in Cloud Computing">Enroll</button>
+</article>
+
+</div>
+</section>
+
+<section>
+<h2>Student Profile</h2>
+
+<form>
+
+<label for="name">Name</label>
+<input id="name" type="text" required>
+
+<label for="email">Email</label>
+<input id="email" type="email" required>
+
+<label for="semester">Semester</label>
+<input id="semester" type="number" min="1" max="8" required>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2026 Student Portal</p>
+</footer>
+
+</body>
+</html>
